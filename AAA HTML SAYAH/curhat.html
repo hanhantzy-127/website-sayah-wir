@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curhat Santai</title>
+    <style>
+        body {
+            background-color: #d0f0fd;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 30px 20px;
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        p.intro {
+            text-align: center;
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .curhat-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #616161;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button a {
+            background-color: #1a237e;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #3949ab;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌈 Curhat & Komentar Bebas 🎤</h1>
+    <p class="intro">Gak usah kaku, di sini tempat lu nyampain uneg-uneg, curhatan, atau cuma mau sapa admin juga boleh kok 😁</p>
+
+    <div class="curhat-wrapper">
+        <form onsubmit="return false;">
+            
+            <label for="nama">Nama (boleh samaran kok 😎):</label>
+            <input type="text" id="nama" name="nama">
+
+            <label for="curhat">Isi Curhatan / Pesan Lu:</label>
+            <textarea id="curhat" name="curhat" rows="6"></textarea>
+
+            <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+
+<p style="text-align: center; font-size: 16px;">
+    Mau ngobrol langsung? Bisa juga kontak gue lewat <strong>WhatsApp</strong>:
+</p>
+<p style="text-align: center; margin-top: 10px;">
+    <a href="https://wa.me/6288980236200" target="_blank" style="background-color: #25d366; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+        Chat di WhatsApp 📱
+    </a>
+</p>
+
+
+            <button type="submit" class="submit-btn">Kirim Aja, Brok!</button>
+        </form>
+    </div>
+
+    <div class="back-button">
+        <a href="index.html"><i class="fas fa-arrow-left"></i> Balik ke Halaman Utama</a>
+    </div>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

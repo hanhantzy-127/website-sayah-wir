@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website Penyatir dan chill guy</title>
+    <link rel="icon" href="hanako logo.jpg" type="image/png">
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #555555;
+            height: 60px;
+            width: 100%;
+        }
+
+        .navbar {
+            background-color: #333333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px; 
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        .nav-links a {
+            color: #333333;
+            background-color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #444444;
+            color: #fff;
+        }
+
+        body {
+            background-color: rgb(173, 216, 230);
+            font-family: Georgia, sans-serif;
+        }
+
+        h1 {
+            color: rgb(00, 33, 66);
+            font-size: 36px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            color: #333333;
+            font-size: 18px;
+        }
+
+        a {
+            color: #ff7f50;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #333333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #626262;
+            transition-duration: 0.5s;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        .abu {
+            background-color: #333333;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .putih {
+            background-color: #ffffff;
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .item:hover {
+            background-color: #626262;
+        }
+
+        form.form-wrapper {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        form.form-wrapper label {
+            margin-top: 12px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        form.form-wrapper input[type="text"],
+        form.form-wrapper input[type="email"],
+        form.form-wrapper textarea,
+        form.form-wrapper select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        form.form-wrapper input[type="submit"] {
+            margin-top: 20px;
+            background-color: #333333;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        form.form-wrapper input[type="submit"]:hover {
+            background-color: #8d8d8d;
+            transition-duration: 0.5s;
+        }
+
+        #judul-berubah {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        p {
+            align-items: center;
+            text-align: center;
+        }
+
+        .btn,
+.item,
+.nav-links a {
+    transition: all 0.3s ease;
+}
+
+/* Buat tombol utama */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Buat link item hobi, kontak, curhat */
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Buat tombol navbar */
+.nav-links a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <a href="#">NAVBAR CEUNAH</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <h1 id="judul-berubah"></h1>
+
+        <p>Ini adalah website iseng gw di HTML.</p>
+        <p>halo ini adalah pelajaran Pertamaku lagi di html semoga aku bisa menjadi programmer yang ahli, btw gambar mobil di bawah itu mobil impian admin hehe</p>
+
+        <img src="https://wallpapers.com/images/hd/limited-edition-toyota-supra-mk4-fc691pm480c9zeag.jpg" alt="mobil impian">
+
+        <div class="link-container">
+            <a href="https://www.youtube.com/" target="_blank" class="btn">website favorite</a>
+            <a href="https://www.figma.com/design/2yH0P7GuhQnGVAm7rrobnc/Untitled?node-id=0-1&t=5yXj7ocWhYugI5Zw-1" class="btn">mampir kak desain sayah nih😋😋</a>
+        </div>
+
+        <div class="container">
+            <a href="hobi.html" class="item abu">MY Hobi</a>
+            <a href="kontak.html" class="item putih">Kontak</a>
+            <a href="curhat.html" class="item abu">Untuk Comment/Curhat</a>
+        </div>
+    </main>
+
+    <!-- FORM -->
+    <form class="form-wrapper" id="form-kesan" onsubmit="return kirimForm(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="pesan">Pesan/Kesannya kak</label>
+        <textarea name="pesan" id="pesan" rows="4"></textarea>
+
+        <label for="pendidikan">Pilih pendidikan saat ini kak:</label>
+        <select name="pendidikan" id="pendidikan">
+            <option value="esdeh">esdeh🥶🥶</option>
+            <option value="esempeh">esempeh🤯🤯</option>
+            <option value="esemkah">esemkah🥲🥲</option>
+            <option value="kulyah">kulyah😂😂</option>
+            <option value="istri">apalah udah punya isteri sayah😏😏</option>
+        </select>
+
+        <input type="submit" value="kirim">
+    </form>
+
+    <!-- OUTPUT -->
+    <div id="output-form"></div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Maulana Web. All rights reserved.
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="ketik.js"></script>
+
+</body>
+</html>
